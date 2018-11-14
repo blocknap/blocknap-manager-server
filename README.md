@@ -1,4 +1,4 @@
-# BlockNap
+# BlockNap Manager Server
 # Version 0.2.0
 
  1.Create account in https://infura.io/
