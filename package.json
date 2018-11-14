@@ -1,0 +1,26 @@
+{
+  "name": "blocknap_manager_server",
+  "version": "0.2.0",
+  "description": "Server to manage smart contract in Ethereum",
+  "main": "index.js",
+  "dependencies": {
+    "async": "2.6.1",
+    "body-parser": "1.18.3",
+    "commander": "2.19.0",
+    "ethers": "3.0.27",
+    "express": "4.16.3",
+    "figlet": "1.2.0",
+    "hash": "0.2.1",
+    "npm": "6.1.0",
+    "pg": "7.6.0",
+    "request": "2.88.0",
+    "solc": "0.4.24",
+    "web3": "1.0.0-beta.31"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Diego Martin Moreno",
+  "license": "Apache-2.0"
+}
