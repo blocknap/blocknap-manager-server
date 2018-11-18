@@ -48,3 +48,52 @@
 
 
 7.Execute init.sh
+
+
+## Call Manager Server
+
+
+- URL http://<ip_server>:<port>/manager/v1/insert/<name_of_smart_contract>
+  
+- Header: Content-Type:application/json
+
+- Body (Params of constructor):
+
+```json
+{
+   "date":"<date>",
+    "issuer":"<issuer>",
+    "receiver":"<receiver>",
+    "subject":"<subject>"
+}
+```
+
+
+## Add new smart contract
+
+
+1. In folder *SmartContract* copy blockNap.js with other name
+
+2. In folder *SmartContract* copy your SmartContract
+
+3. Modify method *paramsConstructor* in your new file javascrip to create the constructor of Smart Contract using json in body of call
+
+```javascript
+exports.paramsConstructor = function (info) {
+ return [info.date, info.issuer,info.receiver,info.subject];
+}
+```
+
+4. Add Smart Contract to properties in section *smart_contracts* 
+
+```json
+	{
+       "name":"<nameOfSmartContract>",
+       "sol":"<FileSolidityOfSmartContract>",
+       "js":"<nameFileJSToConstructor>",
+       "listener":"<nameListenerAssociated>",
+       "oracle":"<nameOracleAssociated>"
+		}
+```
+
+5. Restart server
