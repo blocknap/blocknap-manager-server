@@ -64,7 +64,7 @@
 ## Call Manager Server
 
 
-- URL http://<ip_server>:<port>/manager/v1/insert/<name_of_smart_contract>
+- URL http://**ip_server**:**port**/manager/v1/insert/**name_of_smart_contract**/
   
 - Header: Content-Type:application/json
 
