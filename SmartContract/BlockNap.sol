@@ -17,7 +17,7 @@ contract BlockNap {
     /**
      * Constructor
      */
-    function BlockNapONG(string _fecha, string _emisor, string _receptor, string _asunto){
+    function BlockNap(string _fecha, string _emisor, string _receptor, string _asunto){
         fecha = _fecha;
         emisor = _emisor;
         receptor = _receptor;
