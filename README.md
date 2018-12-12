@@ -47,7 +47,8 @@
 ```
 
 
-7.Execute init.sh
+7.Execute:
+node index.js
 
 ### Prerequisites
 
